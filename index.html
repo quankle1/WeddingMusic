@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Music - Thank You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Image -->
+    <div class="background-image"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Side: Text Content -->
+        <div class="left-section">
+            <div class="text-content">
+                <p class="greeting" id="happyWedding">
+                    <span>H</span><span>A</span><span>P</span><span>P</span><span>Y</span>
+                    <span class="space"> </span>
+                    <span>W</span><span>E</span><span>D</span><span>D</span><span>I</span><span>N</span><span>G</span>
+                </p>
+                <h1 class="main-title fade-in-text" style="animation-delay: 1s;">
+                    <span class="name">Hải Đăng</span>
+                    <span class="heart">❤️</span>
+                    <span class="name">Yến Vy</span>
+                </h1>
+            </div>
+
+            <!-- Floating Music Button (Bottom Right Corner) -->
+            <button class="floating-music-btn" id="floatingMusicBtn" title="Phát nhạc">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Right Side: Image from folder -->
+        <div class="right-section">
+            <div class="image-overlay"></div>
+        </div>
+    </div>
+
+    <!-- Hidden Music Player Panel -->
+    <div class="music-panel" id="musicPanel">
+        <button class="close-panel" id="closePanel">×</button>
+
+        <div class="current-song-info">
+            <p class="now-playing">Now Playing</p>
+            <p class="song-title" id="songTitle">Chọn bài hát để bắt đầu</p>
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="time-info">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <button class="control-btn" id="shuffleBtn" title="Shuffle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5" />
+                </svg>
+            </button>
+
+            <button class="control-btn" id="prevBtn" title="Previous">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+                </svg>
+            </button>
+
+            <button class="control-btn play-btn" id="playPauseBtn" title="Play">
+                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+                <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 4h4v16H6zM14 4h4v16h-4z" />
+                </svg>
+            </button>
+
+            <button class="control-btn" id="nextBtn" title="Next">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+                </svg>
+            </button>
+
+            <button class="control-btn" id="repeatBtn" title="Repeat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 1l4 4-4 4" />
+                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                    <path d="M7 23l-4-4 4-4" />
+                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="playlist">
+            <h3 class="playlist-title">Danh sách bài hát</h3>
+            <div class="playlist-items" id="playlistItems"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
