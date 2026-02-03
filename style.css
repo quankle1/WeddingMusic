@@ -610,15 +610,31 @@ body {
     .left-section {
         padding: 2rem;
         border-right: none;
-        border-bottom: 1px solid #c8c8c8;
+        border-left: none;
+        border-bottom: 2px solid #b0b0b0;
+    }
+
+    .right-section {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #b0b0b0;
     }
 
     .greeting {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        letter-spacing: 6px;
     }
 
     .main-title {
+        font-size: 3.5rem;
+    }
+
+    .main-title .name {
         font-size: 4rem;
+    }
+
+    .main-title .heart {
+        font-size: 2.5rem;
     }
 
     .floating-music-btn {
@@ -627,18 +643,39 @@ body {
         width: 50px;
         height: 50px;
     }
+
+    .floating-music-btn svg {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 @media (max-width: 768px) {
+    .left-section {
+        padding: 1.5rem;
+    }
+
     .greeting {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+        margin-bottom: 1rem;
     }
 
     .main-title {
+        font-size: 2.5rem;
+    }
+
+    .main-title .name {
         font-size: 3rem;
     }
 
+    .main-title .heart {
+        font-size: 2rem;
+    }
+
     .floating-music-btn {
+        bottom: 1.5rem;
+        right: 1.5rem;
         width: 45px;
         height: 45px;
     }
@@ -651,5 +688,113 @@ body {
     .music-panel {
         width: 95%;
         padding: 1.5rem;
+        max-height: 85vh;
+    }
+
+    .close-panel {
+        top: 0.3rem;
+        right: 0.3rem;
+        width: 35px;
+        height: 35px;
+        font-size: 1.8rem;
+    }
+
+    .current-song-info {
+        padding: 1rem;
+    }
+
+    .song-title {
+        font-size: 1.2rem;
+    }
+
+    .player-controls {
+        gap: 0.5rem;
+        padding: 0.8rem;
+    }
+
+    .control-btn {
+        padding: 0.6rem;
+    }
+
+    .control-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .play-btn {
+        padding: 1rem;
+    }
+
+    .play-btn svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .playlist-title {
+        font-size: 1.1rem;
+    }
+
+    .playlist-item {
+        padding: 0.8rem;
+    }
+
+    .playlist-item-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-section {
+        padding: 1rem;
+    }
+
+    .greeting {
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .main-title .name {
+        font-size: 2.3rem;
+    }
+
+    .main-title .heart {
+        font-size: 1.5rem;
+        margin: 0.3rem 0;
+    }
+
+    .floating-music-btn {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    .floating-music-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .music-panel {
+        width: 96%;
+        padding: 1rem;
+        max-height: 90vh;
+    }
+
+    .current-song-info {
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .player-controls {
+        gap: 0.3rem;
+        padding: 0.6rem;
+    }
+
+    .playlist-items {
+        max-height: 200px;
     }
 }
