@@ -480,7 +480,7 @@ body {
 }
 
 .playlist-items {
-    max-height: 250px;
+    max-height: 200px;
     overflow-y: auto;
     padding-right: 0.5rem;
 }
